@@ -7,6 +7,7 @@
         <link href="vendor/css/bootstrap-5.3.0.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
         <link href="css/main.css" rel="stylesheet">
+        <link href="css/responsive.css" rel="stylesheet">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
         </style>
@@ -38,7 +39,7 @@
                     <a class="nav-link" id="link_hosting" href="#hosting">4. Host</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="link_hosting" href="#connecting">5. Connect</a>
+                    <a class="nav-link" id="link_connecting" href="#connecting">5. Connect</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="link_datapackage" href="#datapackage">Datapackage</a>
@@ -49,25 +50,24 @@
                 <div id="clientmods" class="page active">
                     <div class="panel panel-1">
                         <div class="step-number">1</div>
-                        <div class="images">
-                            <img src="images/clientmods/non_rtx.jpg" />
-                        </div>
-                        <h4>Install the <strong>non-RTX</strong> version of the game on Steam.</h4>
+                        <h4>Install the game.</h4>
                         <ul>
-                            <li>Right-click RE3R on Steam, click "Properties",<br /> and do the steps in the picture to the right.</li>
+                            <li>Any version should work. <br /> Just be sure to grab the proper REFramework <br /> 
+                                for the build you have from Step 2.</li>
                         </ul>
                     </div>
                     
                     <div class="panel panel-2">
                         <div class="step-number">2</div>
                         <div class="images">
-                            <img src="images/clientmods/framework.jpg" /> 
                             <img src="images/clientmods/framework2.jpg" />
                         </div>
                         <h4>Install REFramework.</h4>
                         <ul>
-                            <li>Download the "RE3_TDB67.zip" file in the <a href="https://github.com/praydog/REFramework/releases" target="_blank">most recent release here</a>.</li>                 
-                            <li>Extract the contents of that zip into your RE3R game install's folder as shown here ^^^ </li>
+                            <li>Non-RTX Users - <a href="https://github.com/praydog/REFramework/releases" target="_blank">most recent release here</a>.</li>
+                            <li>RTX Users - <a href="https://github.com/praydog/REFramework-nightly/releases" target="_blank">nightly release here</a>.</li>                 
+                            <li>Extract the contents of that zip into your RE3R game install's folder</li>
+                            <li>Note: Do not extract the VR/XR dlls if you don't plan on using VR/XR</li>
                         </ul>
                     </div>
                     
@@ -78,7 +78,7 @@
                         </div>
                         <h4>Install the AP client mods.</h4>
                         <ul>
-                            <li>Download the "source.zip" file in the <a href="https://github.com/dontjoome/RE3R_AP_Client/releases" target="_blank">most recent release here</a>.</li>
+                            <li>Download the "source.zip" file from the <a href="https://github.com/TheRealSolidusSnake/RE3R_AP_Client/releases" target="_blank">most recent release here</a>.</li>
                             <li>Extract the contents of "source.zip" into your RE3R game install's folder.</li>
                             <li>(If it asks you to overwrite the "reframework" folder, choose Yes.)</li>
                         </ul>
@@ -107,112 +107,114 @@
                             <h4>Basic Options</h4>
                             <div>
                                 <label for="player_name">Player Name:</label>
-                                <input name="player_name" placeholder="Your AP player name" />
-                            </div>
-                            <div>
-                                <label for="character">Character:</label>
-                                <select name="character">
-                                    <option value="jill">Jill</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label for="scenario">Scenario:</label>
-                                <select name="scenario">
-                                    <option value="a">Normal (A)</option>
-                                </select>
+                                <input id="player_name" name="player_name" placeholder="Your AP player name" />
                             </div>
                             <div>
                                 <label for="difficulty">Difficulty:</label>
-                                <select name="difficulty">
-                                    <option value="standard">Standard</option>
+                                <select id="difficulty" name="difficulty">
+                                    <option value="assisted">Assisted</option>
+                                    <option value="standard" selected>Standard</option>
                                     <option value="hardcore">Hardcore</option>
                                     <option value="nightmare">Nightmare</option>
                                     <option value="inferno">Inferno</option>
                                 </select>
                             </div>
                             <div class="form-check">
-                                <input type="checkbox" name="death_link" /> <label for="death_link">DeathLink</label>
                             </div>
                         </div>
-                        
+
                         <div class="form-group">
-                            <h4>Item Randomization Options</h4>
+                            <h4>Gameplay Options</h4>
+                            <div class="form-check">
+                                <input type="checkbox" name="allow_missable_locations" id="allow_missable_locations" /> <label class="checkbox-label" for="allow_missable_locations">Allow Missable Locations</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" name="allow_progression_in_nest" id="allow_progression_in_nest" /> <label class="checkbox-label" for="allow_progression_in_nest">Allow Progression in NEST</label>
+                            </div>
                             <div>
-                                <label for="starting_hip_pouches">Starting Hip Pouches:</label>
-                                <select name="starting_hip_pouches">
-                                    <option value="pockets">0</option>
-                                    <option value="fanny_pack">1</option>
-                                    <option value="purse">2</option>
-                                    <option value="backpack">3</option>
+                                <label for="add_files_as_locations">Add Files as Locations:</label>
+                                <select id="add_files_as_locations" name="add_files_as_locations">
+                                    <option value="none" selected>None</option>
+                                    <option value="all">All</option>
                                 </select>
                             </div>
-                            <div class="form-check">
-                                <input type="checkbox" name="bonus_start" /> <label for="bonus_start">Bonus Start</label>
-                            </div>
-                            <div class="form-check">
-                                <input type="checkbox" name="early_fire_hose" /> <label for="early_fire_hose">Early Fire Hose</label>
-                            </div>
-                            <div class="form-check">
-                                <input type="checkbox" name="extra_sewer_items" /> <label for="extra_sewer_items">Extra Sewer Items</label>
-                            </div>
-                            <div class="form-check">
-                                <input type="checkbox" name="allow_missable_locations" /> <label for="allow_missable_locations">Allow Missable Locations</label>
-                            </div>
-                            <div class="form-check">
-                                <input type="checkbox" name="allow_progression_in_nest" /> <label for="allow_progression_in_nest">Allow Progression in NEST</label>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <h4>Weapon Customization</h4>
                             <div>
-                                <input type="checkbox" name="oops_all_grenades" /> <label for="oops_all_grenades">Oops! All Grenades</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" name="oops_all_handguns" /> <label for="oops_all_handguns">Oops! All Handguns</label>
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <h4>Item Removal Challenges</h4>
-
-                            <div class="form-check">
-                                <input type="checkbox" name="no_first_aid_spray" /> <label for="no_first_aid_spray">No First Aid Sprays</label>
-                            </div>
-                            <div class="form-check">
-                                <input type="checkbox" name="no_green_herb" /> <label for="no_green_herb">No Green Herbs</label>
-                            </div>
-                            <div class="form-check">
-                                <input type="checkbox" name="no_red_herb" /> <label for="no_red_herb">No Red Herbs</label>
-                            </div>
-                            <div class="form-check">
-                                <input type="checkbox" name="no_gunpowder" /> <label for="no_gunpowder">No Gunpowder</label>
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <h4>Trap Options</h4>
-
-                            <div class="form-check">
-                                <input type="checkbox" name="add_damage_traps" /> <label for="add_damage_traps">Add Damage Traps</label>
+                                <label for="add_enemy_kills_as_locations">Add Enemy Kills as Locations:</label>
+                                <select id="add_enemy_kills_as_locations" name="add_enemy_kills_as_locations">
+                                    <option value="none" selected>None</option>
+                                    <option value="all">All</option>
+                                </select>
                             </div>
                             <div class="form-subgroup">
                                 <div>
-                                    <label for="damage_trap_count">Damage Traps Total:</label>
-                                    <select name="damage_trap_count">
-                                        <option value="5">5</option>
-                                        <option value="10">10</option>
-                                        <option value="15">15</option>
-                                        <option value="20">20</option>
-                                        <option value="25">25</option>
-                                        <option value="30">30</option>
+                                    <label for="enemy_kill_items">Enemy Kill Items:</label>
+                                    <select id="enemy_kill_items" name="enemy_kill_items">
+                                        <option value="mixed">Mixed</option>
+                                        <option value="all_weapon_related">All Weapon Related</option>
+                                        <option value="ammo_related">Ammo Related</option>
+                                        <option value="ammo" selected>Ammo</option>
+                                        <option value="gunpowder">Gunpowder</option>
+                                        <option value="healing">Healing</option>
                                     </select>
-                                </div>
-                                <div class="form-check">
-                                    <input type="checkbox" name="damage_traps_can_kill" /> <label for="damage_traps_can_kill">Damage Traps Can Kill</label>
+                                    <div class="option-subtext">Used when enemy kills are enabled.</div>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="form-group">
+                            <h4>Helpful Options</h4>
+                            <div>
+                                <label for="starting_hip_pouches">Starting Hip Pouches:</label>
+                                <select id="starting_hip_pouches" name="starting_hip_pouches">
+                                    <option value="pockets" selected>Pockets (0)</option>
+                                    <option value="fanny_pack">Fanny Pack (1)</option>
+                                    <option value="purse">Purse (2)</option>
+                                    <option value="backpack">Backpack (3)</option>
+                                </select>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" name="bonus_start" id="bonus_start" checked /> <label class="checkbox-label" for="bonus_start">Bonus Start</label> <span id="recommend_bonus_start">RECOMMENDED</span>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" name="early_fire_hose" id="early_fire_hose" checked /> <label class="checkbox-label" for="early_fire_hose">Early Fire Hose</label> <span id="recommend_early_fire_hose">RECOMMENDED</span>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" name="extra_sewer_items" id="extra_sewer_items" checked /> <label class="checkbox-label" for="extra_sewer_items">Extra Sewer Items</label> <span id="recommend_extra_sewer_items">RECOMMENDED</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <h4>Weapon Options</h4>
+                            <div class="form-check">
+                                <input type="checkbox" name="local_weapons" id="local_weapons" checked /> <label class="checkbox-label" for="local_weapons">Local Weapons</label> <span id="recommend_local_weapons">RECOMMENDED</span>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" name="double_weapons" id="double_weapons" /> <label class="checkbox-label" for="double_weapons">Double Weapons</label>
+                            </div>
+                            <div>
+                                <label for="ammo_pack_modifier">Ammo Pack Modifier:</label>
+                                <select id="ammo_pack_modifier" name="ammo_pack_modifier">
+                                    <option value="none" selected>None</option>
+                                    <option value="max">Max</option>
+                                    <option value="double">Double</option>
+                                    <option value="half">Half</option>
+                                </select>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" name="oops_all_grenades" id="oops_all_grenades" /> <label class="checkbox-label" for="oops_all_grenades">Oops! All Grenades</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" name="oops_all_handguns" id="oops_all_handguns" /> <label class="checkbox-label" for="oops_all_handguns">Oops! All Handguns</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group notice">
+                            <strong>NOTE:</strong>
+                            <p>The options presented here are limited to options that are considered "safe" for community syncs and asyncs.</p>
+                            <p class="small"><em>Additionally, recommended checkbox options are enabled by default on this screen.</em></p>
+                            <p>For the full set of available options, you'll need to customize the template YAML provided with the apworld release.</p>
+                        </div>
+
                         <div class="action-group">
                             <button class="btn btn-primary" onclick="exportYAML()">Generate YAML</button><br />
                             <button class="btn btn-success next-step" data-step="#generation">Next Step: Generate</button>
@@ -239,7 +241,7 @@
                         </div>
                         <h4>Install the most recent APWorld.</h4>
                         <ul>
-                            <li>Download the RE3R .apworld file from the<br /><a href="https://github.com/dontjoome/RE3R_AP_World/releases" target="_blank">most recent release here</a>.</li>
+                            <li>Download the RE3R .apworld file from the<br /><a href="https://github.com/TheRealSolidusSnake/RE3R_AP_World/releases" target="_blank">most recent release here</a>.</li>
                             <li>Put that RE3R .apworld file in the<br />"custom_worlds" folder of your Archipelago<br />(AP) install.</li>
                         </ul>
                     </div>
@@ -334,13 +336,6 @@
                 </div>
 
                 <div id="datapackage" class="page">
-                    <h4>
-                        Datapackage for 
-                        <select name="datapackage_scenario">
-                            <option value="jill_a">Jill A</option>
-                        </select>
-                    </h4>
-
                     <div class="panel panel-items"></div>
                     <div class="panel panel-locations"></div>
                 </div>

@@ -1,0 +1,87 @@
+/**
+ * Borrowed template from Michael Vieth at the Gist here: https://gist.github.com/mavieth/e0c8fdcb72a30d85f57a
+ */
+
+@media all and (max-width: 1600px) { 
+    div.page div.panel, div.page div.form-group {
+        height: 400px;
+    }
+
+    #hosting div.panel {
+        height: 600px;
+    }
+
+    #connecting div.panel {
+        height: 680px;
+    }
+}
+
+@media all and (max-width: 1350px) { 
+    div.page div.panel, div.page div.form-group {
+        height: 450px;
+    }
+
+    #hosting div.panel {
+        height: 650px;
+    }
+
+    #connecting div.panel {
+        height: 700px;
+    }
+}
+
+@media all and (max-width: 1200px) { 
+    div.page div.panel, div.page div.form-group {
+        height: 550px;
+    }
+
+    #hosting div.panel {
+        height: 700px;
+    }
+
+    #connecting div.panel {
+        height: 780px;
+    }
+}
+
+@media all and (max-width: 1100px) { 
+    div.page div.panel, div.page div.form-group {
+        height: 650px;
+    }
+
+    #hosting div.panel {
+        height: 750px;
+    }
+
+    #connecting div.panel {
+        height: 950px;
+    }
+}
+
+@media all and (max-width: 960px) { 
+    div.page div.panel, div.page div.form-group {
+        height: 750px;
+    }
+
+    #hosting div.panel {
+        height: 800px;
+    }
+
+    #connecting div.panel {
+        height: 1080px;
+    }
+}
+
+@media all and (max-width: 855px) { 
+    div.page div.panel, div.page div.form-group {
+        height: 900px;
+    }
+
+    #hosting div.panel {
+        height: 900px;
+    }
+
+    #connecting div.panel {
+        height: 1300px;
+    }
+}
