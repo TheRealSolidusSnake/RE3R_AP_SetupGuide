@@ -8,10 +8,15 @@
         "parent_object": "sm74_200_SideBag",
         "folder_path": "RopewayContents/World/Location_DownTown/LocationLevel_DownTown/LocationFsm_DownTown/S03_1000/ES_S03_1000/Item/ES_S03_1000/I_100_Subway_Area/_Nightmare",
         "allow_item": [
+            "Red Jewel",
+            "Blue Jewel",
+            "Green Jewel",
             "Fire Hose",
             "Lock Pick",
             "Battery Pack",
             "Kendo Gate Key",
+            "ID Card",
+            "Electronic Gadget",
             "Locker Room Key",
             "Tape Player",
             "Fuse 1",
@@ -30,10 +35,15 @@
         "parent_object": "WP3000",
         "folder_path": "RopewayContents/World/Location_DownTown/LocationLevel_DownTown/LocationFsm_DownTown/S03_1000/ES_S03_1000/Item/ES_S03_1000/Weapon/Nightmare",
         "allow_item": [
+            "Red Jewel",
+            "Blue Jewel",
+            "Green Jewel",
             "Fire Hose",
             "Lock Pick",
             "Battery Pack",
             "Kendo Gate Key",
+            "ID Card",
+            "Electronic Gadget",
             "Locker Room Key",
             "Tape Player",
             "Fuse 1",
@@ -82,7 +92,7 @@
     {
         "name": "On Cart",
         "region": "Pharmacy",
-        "original_item": "Fancy Box - Green Jewel",
+        "original_item": "Green Jewel",
         "condition": {},
         "item_object": "sm73_311",
         "parent_object": "sm73_311",
@@ -109,7 +119,7 @@
     {
         "name": "On Barrel 2",
         "region": "Side Alley",
-        "original_item": "Fancy Box - Blue Jewel",
+        "original_item": "Blue Jewel",
         "condition": {},
         "item_object": "sm73_312",
         "parent_object": "sm73_312",
@@ -118,14 +128,19 @@
     {
         "name": "Power Panel by Scaffolding",
         "region": "Power Maze",
-        "original_item": "Fancy Box - Red Jewel",
+        "original_item": "Red Jewel",
         "condition": {},
         "item_object": "sm73_313",
         "parent_object": "sm73_313",
         "folder_path": "RopewayContents/World/Location_DownTown/LocationLevel_DownTown/LocationFsm_DownTown/S03_1000/ES_S03_1000/Item/ES_S03_1000/KeyItem/Nightmare",
         "allow_item": [
+            "Red Jewel",
+            "Blue Jewel",
+            "Green Jewel",
             "Battery Pack",
             "Kendo Gate Key",
+            "ID Card",
+            "Electronic Gadget",
             "Locker Room Key",
             "Tape Player",
             "Fuse 1",
@@ -144,7 +159,12 @@
         "parent_object": "sm70_206",
         "folder_path": "RopewayContents/World/Location_DownTown/LocationLevel_DownTown/LocationFsm_DownTown/S03_1000/ES_S03_1000/Item/ES_S03_1000/I_900_Sewer/Nightmare",
         "allow_item": [
+            "Red Jewel",
+            "Blue Jewel",
+            "Green Jewel",
             "Kendo Gate Key",
+            "ID Card",
+            "Electronic Gadget",
             "Locker Room Key",
             "Tape Player",
             "Fuse 1",
@@ -163,7 +183,12 @@
         "parent_object": "sm70_205",
         "folder_path": "RopewayContents/World/Location_DownTown/LocationLevel_DownTown/LocationFsm_DownTown/S03_1000/ES_S03_1000/Item/ES_S03_1000/I_1100_Kendo_Area/Inferno",
         "allow_item": [
+            "Red Jewel",
+            "Blue Jewel",
+            "Green Jewel",
             "Kendo Gate Key",
+            "ID Card",
+            "Electronic Gadget",
             "Locker Room Key",
             "Tape Player",
             "Fuse 1",
@@ -174,13 +199,24 @@
         ]
     },
     {
-        "name": "Near Door On Box",
+        "name": "Near Door on Box",
         "region": "Guard Room",
         "original_item": "ID Card",
         "condition": {},
         "item_object": "sm73_203",
         "parent_object": "sm73_203",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/ES_common/NIGHTMARE"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/ES_common/NIGHTMARE",
+        "allow_item": [
+            "ID Card",
+            "Electronic Gadget",
+            "Locker Room Key",
+            "Tape Player",
+            "Fuse 1",
+            "Fuse 2",
+            "Fuse 3",
+            "Override Key",
+            "Culture Sample"
+        ]
     },
     {
         "name": "ID Case",
@@ -204,7 +240,6 @@
             "Culture Sample"
         ]
     },
-    
     {
         "name": "ID Case",
         "region": "West Office",
@@ -236,6 +271,8 @@
         "parent_object": "sm70_001_onlyUnlimited",
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/ES_common",
         "allow_item": [
+            "ID Card",
+            "Electronic Gadget",
             "Locker Room Key",
             "Tape Player",
             "Fuse 1",
@@ -254,6 +291,8 @@
         "parent_object": "sm70_102_onlyUnlimited",
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/ES_common",
         "allow_item": [
+            "ID Card",
+            "Electronic Gadget",
             "Locker Room Key",
             "Tape Player",
             "Fuse 1",
@@ -272,6 +311,8 @@
         "parent_object": "sm70_100_onlyUnlimited",
         "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/ES_common",
         "allow_item": [
+            "ID Card",
+            "Electronic Gadget",
             "Locker Room Key",
             "Tape Player",
             "Fuse 1",
@@ -340,12 +381,11 @@
         "parent_object": "sm70_205_onlyUnlimited",
         "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/ES_Common/02_Laboratory",
         "allow_item": [
-            "Override Key",
             "Culture Sample"
         ]
     },
     {
-        "name": "Case Near Servers",
+        "name": "Case near Servers",
         "region": "Server Room 2F",
         "original_item": "Explosive B",
         "condition": {},
@@ -353,7 +393,6 @@
         "parent_object": "sm70_208_onlyUnlimited",
         "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/ES_Common/02_Laboratory",
         "allow_item": [
-            "Override Key",
             "Culture Sample"
         ]
     },
@@ -366,7 +405,6 @@
         "parent_object": "sm70_208_Acase",
         "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/ES_Common/02_Laboratory",
         "allow_item": [
-            "Override Key",
             "Culture Sample"
         ]
     },
@@ -379,7 +417,6 @@
         "parent_object": "sm70_002_onlyUnlimited",
         "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/ES_Common/02_Laboratory",
         "allow_item": [
-            "Override Key",
             "Culture Sample"
         ]
     },
@@ -392,7 +429,6 @@
         "parent_object": "sm70_206_onlyUnlimited",
         "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/ES_Common/02_Laboratory",
         "allow_item": [
-            "Override Key",
             "Culture Sample"
         ]
     },
@@ -405,9 +441,8 @@
         "parent_object": "sm70_100_SHard",
         "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/ES_Common/04_Room02"
     },
-    
     {
-        "name": "Counter By Door",
+        "name": "Counter by Door",
         "region": "Supermarket",
         "remove": true
     },
@@ -457,12 +492,12 @@
         "remove": true
     },
     {
-        "name": "Cabinet Near Reception Window",
+        "name": "Cabinet near Reception Window",
         "region": "West Office",
         "remove": true
     },
     {
-        "name": "Desk Near Safe",
+        "name": "Desk near Safe",
         "region": "West Office",
         "remove": true
     },
@@ -483,7 +518,7 @@
     },
     {
         "name": "By Doors",
-        "region": "Makeshift Sickroom",
+        "region": "Makeshift Sick Room",
         "remove": true
     },
     {
@@ -513,7 +548,7 @@
     },
     {
         "name": "Supply Cart",
-        "region": "Sickroom",
+        "region": "Sick Room",
         "remove": true
     },
     {
@@ -547,22 +582,22 @@
         "remove": true
     },
     {
-        "name": "In Container By Fuse 1",
+        "name": "In Container by Fuse 1",
         "region": "Warehouse",
         "remove": true
     },
     {
-        "name": "In Container By Fuse 2",
+        "name": "In Container by Fuse 2",
         "region": "Warehouse",
         "remove": true
     },
     {
-        "name": "In Container By Fuse 3",
+        "name": "In Container by Fuse 3",
         "region": "Warehouse",
         "remove": true
     },
     {
-        "name": "In Container By Fuse 4",
+        "name": "In Container by Fuse 4",
         "region": "Warehouse",
         "remove": true
     },

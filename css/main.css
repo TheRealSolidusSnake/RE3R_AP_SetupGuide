@@ -20,6 +20,10 @@ a {
     color: #a1d22e;
 }
 
+input[type='checkbox']:hover, label.checkbox-label:hover {
+    cursor: pointer;
+}
+
 nav a.navbar-brand {
     font-size: 56px;
     margin: 0 auto;
@@ -92,7 +96,7 @@ div.page div.panel {
     display: block;
     float: left;
     width: 45%;
-    height: 270px;
+    height: 320px;
     margin: 0 20px 20px 0;
     padding: 0 20px 20px 20px;
     background-color: rgba(64, 7, 5, 0.9);
@@ -146,13 +150,32 @@ div.page div.form-group {
     display: block;
     float: left;
     width: 30%;
-    height: 300px;
+    height: 320px;
     margin: 0 20px 20px 0;
     padding: 15px 20px 20px 20px;
     background-color: rgba(64, 7, 5, 0.9);
     border: 5px solid rgba(160, 27, 20, 0.7);
     color: #ddd;
     font-size: 18px;
+}
+
+div.page div.form-group h4 em {
+    display: block;
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+div.page div.form-group.notice {
+    background-color: rgba(64, 28, 5, 0.9);
+    border: 5px solid rgba(181, 83, 22);
+}
+
+div.page div.form-group.notice p.small {
+    font-size: 14px;
+    margin: 0 0 15px 0;
+    padding: 0px;
+    color: #777;
 }
 
 div.page div.form-group div.form-check {
@@ -239,6 +262,20 @@ button.next-step:hover {
     background-color: #7ea81d;
     color: #111;
     font-weight: 600;
+}
+
+.option-subtext {
+    font-size: 12px;
+    color: #2296ba;
+}
+
+#recommend_bonus_start,
+#recommend_early_fire_hose,
+#recommend_extra_sewer_items,
+#recommend_local_weapons {
+    font-size: 14px;
+    font-weight: bolder;
+    color: #a1d22e;
 }
 
 div.clear { clear: both; }

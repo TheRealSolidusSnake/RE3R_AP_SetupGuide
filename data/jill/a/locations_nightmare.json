@@ -8,10 +8,15 @@
         "parent_object": "sm74_200_SideBag",
         "folder_path": "RopewayContents/World/Location_DownTown/LocationLevel_DownTown/LocationFsm_DownTown/S03_1000/ES_S03_1000/Item/ES_S03_1000/I_100_Subway_Area/_Nightmare",
         "allow_item": [
+            "Red Jewel",
+            "Blue Jewel",
+            "Green Jewel",
             "Fire Hose",
             "Lock Pick",
             "Battery Pack",
             "Kendo Gate Key",
+            "ID Card",
+            "Electronic Gadget",
             "Locker Room Key",
             "Tape Player",
             "Fuse 1",
@@ -30,10 +35,15 @@
         "parent_object": "WP3000",
         "folder_path": "RopewayContents/World/Location_DownTown/LocationLevel_DownTown/LocationFsm_DownTown/S03_1000/ES_S03_1000/Item/ES_S03_1000/Weapon/Nightmare",
         "allow_item": [
+            "Red Jewel",
+            "Blue Jewel",
+            "Green Jewel",
             "Fire Hose",
             "Lock Pick",
             "Battery Pack",
             "Kendo Gate Key",
+            "ID Card",
+            "Electronic Gadget",
             "Locker Room Key",
             "Tape Player",
             "Fuse 1",
@@ -71,7 +81,7 @@
         "folder_path": "RopewayContents/World/Location_DownTown/LocationLevel_DownTown/LocationFsm_DownTown/S03_1000/ES_S03_1000/Item/ES_S03_1000/I_200_T-Junction_Area/Nightmare"
     },
     {
-        "name": "Box By Donut Shop",
+        "name": "Box by Donut Shop",
         "region": "Shopping Plaza",
         "original_item": "High-Grade Gunpowder",
         "condition": {},
@@ -82,14 +92,14 @@
     {
         "name": "On Cart",
         "region": "Pharmacy",
-        "original_item": "Fancy Box - Green Jewel",
+        "original_item": "Green Jewel",
         "condition": {},
         "item_object": "sm73_311",
         "parent_object": "sm73_311",
         "folder_path": "RopewayContents/World/Location_DownTown/LocationLevel_DownTown/LocationFsm_DownTown/S03_1000/ES_S03_1000/Item/ES_S03_1000/KeyItem/Nightmare"
     },
     {
-        "name": "Downed Zombie By Entrance",
+        "name": "Downed Zombie by Entrance",
         "region": "Subway Office",
         "original_item": "Hand Grenade",
         "condition": {},
@@ -109,23 +119,28 @@
     {
         "name": "On Barrel 2",
         "region": "Side Alley",
-        "original_item": "Fancy Box - Blue Jewel",
+        "original_item": "Blue Jewel",
         "condition": {},
         "item_object": "sm73_312",
         "parent_object": "sm73_312",
         "folder_path": "RopewayContents/World/Location_DownTown/LocationLevel_DownTown/LocationFsm_DownTown/S03_1000/ES_S03_1000/Item/ES_S03_1000/KeyItem/Nightmare"
     },
     {
-        "name": "Power Panel By Scaffolding",
+        "name": "Power Panel by Scaffolding",
         "region": "Power Maze",
-        "original_item": "Fancy Box - Red Jewel",
+        "original_item": "Red Jewel",
         "condition": {},
         "item_object": "sm73_313",
         "parent_object": "sm73_313",
         "folder_path": "RopewayContents/World/Location_DownTown/LocationLevel_DownTown/LocationFsm_DownTown/S03_1000/ES_S03_1000/Item/ES_S03_1000/KeyItem/Nightmare",
         "allow_item": [
+            "Red Jewel",
+            "Blue Jewel",
+            "Green Jewel",
             "Battery Pack",
             "Kendo Gate Key",
+            "ID Card",
+            "Electronic Gadget",
             "Locker Room Key",
             "Tape Player",
             "Fuse 1",
@@ -144,7 +159,12 @@
         "parent_object": "sm70_206",
         "folder_path": "RopewayContents/World/Location_DownTown/LocationLevel_DownTown/LocationFsm_DownTown/S03_1000/ES_S03_1000/Item/ES_S03_1000/I_900_Sewer/Nightmare",
         "allow_item": [
+            "Red Jewel",
+            "Blue Jewel",
+            "Green Jewel",
             "Kendo Gate Key",
+            "ID Card",
+            "Electronic Gadget",
             "Locker Room Key",
             "Tape Player",
             "Fuse 1",
@@ -155,13 +175,22 @@
         ]
     },
     {
-        "name": "Near Door On Box",
+        "name": "Near Door on Box",
         "region": "Guard Room",
         "original_item": "ID Card",
         "condition": {},
         "item_object": "sm73_203",
         "parent_object": "sm73_203",
-        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/ES_common/NIGHTMARE"
+        "folder_path": "RopewayContents/World/Location_RPD/LocationLevel_RPD/Item/common/ES_common/NIGHTMARE",
+        "allow_item": [
+            "Locker Room Key",
+            "Tape Player",
+            "Fuse 1",
+            "Fuse 2",
+            "Fuse 3",
+            "Override Key",
+            "Culture Sample"
+        ]
     },
     {
         "name": "Attache Case",
@@ -193,9 +222,8 @@
         "parent_object": "sm70_100_SHard",
         "folder_path": "RopewayContents/World/Location_Laboratory/LocationLevel_Laboratory/Item/common/ES_Common/04_Room02"
     },
-
     {
-        "name": "Counter By Door",
+        "name": "Counter by Door",
         "region": "Supermarket",
         "remove": true
     },
@@ -216,7 +244,7 @@
     },
     {
         "name": "Supply Cart",
-        "region": "Sickroom",
+        "region": "Sick Room",
         "remove": true
     },
     {
