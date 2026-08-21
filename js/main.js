@@ -115,10 +115,10 @@ function exportYAML() {
     const player_name = (form_data['player_name'] != '' ? form_data['player_name'] : 'Player');
 
     let fileContents = `name: ${player_name}\n` +
-        "game: Resident Evil 3 Remake\n" +
+        "game: RE3 Remake\n" +
         "requires:\n" +
         `${tab}version: 0.6.5\n\n` +
-        "Resident Evil 3 Remake:\n" +
+        "RE3Remake:\n" +
         `${tab}progression_balancing: 50\n` +
         `${tab}accessibility: items\n`;
 
